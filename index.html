@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autenticador</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
+</head>
+<body>
+  <h1>Autenticador</h1>
+
+   <div class="container">
+    <div id="secretKeyContainer">
+      <label>Chave Secreta:</label>
+      <p id="secretKey">GZSTCZTBGY2TAYJVGM3TIYTCGEYTENRY</p>
+    </div>
+
+    <label for="date">Data:</label>
+    <input type="date" id="date" readonly>
+    <label for="time">Horário:</label>
+    <input type="time" id="time" readonly>
+    <br><br>
+    <button onclick="generateTOTP()">Gerar Código</button>
+  </div>
+
+  <div class="output" id="totpCode">--</div>
+
+  <script src="./src/js/index.js"></script> 
+</body>
+</html>
